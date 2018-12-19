@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap & Styles-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=3d">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="product.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/static/images/com.UvAApps.TurboBOV.jpg">
+
+    <title>Swapportunities</title>
+
+    <nav id="header" class="site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="https://www.youtube.com/watch?v=PVAIj91blZ4">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="444" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg> -->
+        </a>
+        <a class="py-2 d-none d-md-inline-block" href="{{ url_for('main.layout') }}">Home</a>
+          {% if current_user.is_authenticated %}
+        <a class="py-2 d-none d-md-inline-block" href="{{ url_for('main.home') }}">Forum</a>
+          {% else %}
+          {% endif %}
+        <a class="py-2 d-none d-md-inline-block" href="{{ url_for('main.products') }}">Parts</a>
+        <a class="py-2 d-none d-md-inline-block" href="{{ url_for('main.about') }}">About Us</a>
+        <a class="py-2 d-none d-md-inline-block" href="{{ url_for('main.cart') }}">Contact</a>
+          {% if current_user.is_authenticated %}
+        <a class="py-2 d-none d-md-inline-block" href="{{ url_for('posts.n_post') }}">New Post</a>
+        <a class="py-2 d-none d-md-inline-block" href="{{ url_for('users.account') }}">Account</a>
+        <a onClick="return confirmLogout()" class="py-2 d-none d-md-inline-block" href="{{ url_for('users.logout') }}">Logout</a>
+          {% else %}
+        <a class="py-2 d-none d-md-inline-block" href="{{ url_for('users.register') }}">Register</a>
+        <a class="py-2 d-none d-md-inline-block" href="{{ url_for('users.login') }}">Log In</a>
+          {% endif %}
+      </div>
+    </nav>
+
+    <h1 id="homeTitle" class="font-effect-3d"><u>Welcome to Swapportunities!</u></h1>
+
+  </head>
+    <body id="boat" background="/static/images/pure-black.jpg">
+    {% with messages = get_flashed_messages(with_categories = true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    {% block content %}
+
+<!-- bimmer44 -->
+
+<div id="page" class="hfeed site">
+		<div id="site-header">
+			<img class="lamont" src="http://www.bimmerforums.com/wp-content/uploads/2015/08/csl_header.jpg" width="1260" height="240" alt="Bimmerforums.com">
+	    </div>
+
+		</div>
+    <h1 class="entry-title" id="dogs"><u>What You Should Know About Window Mods and Tinting</u></h1>
+		<div class="entry-meta">
+			<span id="dang" class="entry-date"><time class="entry-date" datetime="2018-12-06T08:37:15+00:00">December 6, 2018</time></span> <span class="byline"><span id="psych" class="author vcard">Burton Guster</span></span></div>
+
+<div class="entry-content">
+
+<p>Thinking about tinting your windows? Doing so has numerous benefits, but there are somethings you should be aware of before you commit.</p>
+
+<h2 id="fired">Tints Have Benefits Beyond Looks and Privacy</h2>
+
+<p>Alot of people want tints because of their aesthetics and the privacy they provide, but they also have many other practical benefits. Window films can block solar energy, keeping you and your car cooler. This effect is especially noticeable when you leave your car parked in the sun on a hot day. <a href="http://classifieds.usatoday.com/blog/automotive/complete-guide-choosing-car-window-tinting/">Blocking the sun&#8217;s UV rays&nbsp;</a>also protects your skin and your car&#8217;s interior.</p>
+
+<h2 id="coolys">Not All Tints Are the Same</h2>
+
+<figure class="wp-block-image"><img src="https://i0.wp.com/www.bimmerforums.com/wp-content/uploads/2018/09/IMG_9440.jpg?resize=474%2C316" alt="" class="wp-image-2561" srcset="https://i0.wp.com/www.bimmerforums.com/wp-content/uploads/2018/09/IMG_9440.jpg?resize=1024%2C683 1024w, https://i0.wp.com/www.bimmerforums.com/wp-content/uploads/2018/09/IMG_9440.jpg?resize=300%2C200 300w, https://i0.wp.com/www.bimmerforums.com/wp-content/uploads/2018/09/IMG_9440.jpg?resize=768%2C512 768w, https://i0.wp.com/www.bimmerforums.com/wp-content/uploads/2018/09/IMG_9440.jpg?w=948 948w, https://i0.wp.com/www.bimmerforums.com/wp-content/uploads/2018/09/IMG_9440.jpg?w=1422 1422w" sizes="(max-width: 474px) 100vw, 474px" data-recalc-dims="1" /></figure>
+
+<p>You have several different options when it comes to window tinting. There are <a href="https://www.rvinyl.com/Window-Tint.html">numerous types of films</a>, including the following.</p>
+
+<ul id="party"><li><strong>Dyed window films</strong> consist of three layers of materials: an adhesive, dye and protective layer. They are affordable, though not as durable as other types. They protect against UV rays, but not heat.</li><li><strong>Metalized films</strong> protect against heat and UV rays. They are more durable and expensive than dyed window films. Because they contain metal, however, they can interfere with your cell phone, radio and GPS signal and your car&#8217;s electronics.</li><li><strong>Hybrid films</strong> are a combination of dyed window and metalized films. They have less metal, so they&#8217;re less likely to cause electronics interference.</li><li><strong>Ceramic films</strong> block UV rays and heat, but won&#8217;t interfere with your electronics. They are one of the most expensive options.</li><li><strong>Carbon films </strong>also block UV rays and heat and won&#8217;t cause interference. It is moderately expensive and in the middle of the road regarding performance.</li></ul>
+
+<p>You can also choose between different percentages of tint. The higher the visible light transmittance, the more light the film lets through. Seventy percent tint lets in 30 percent of the light. Fifty percent allows in 50 percent.</p>
+
+<h2 id="cool">Laws Vary by State</h2>
+
+<p>Each state has different laws about what percentage and types of tinting they allow. Different rules also apply to different parts of the car. Make sure you <a href="https://www.rvinyl.com/tint-laws-by-state">check your local laws</a> before modding your windows.</p>
+
+<p>If you travel to a different state with stricter tinting laws, you probably won&#8217;t have a problem, but you still could get a citation from state law enforcement. If you frequently travel to a neighboring state, you may want to check its rules in addition to your home state&#8217;s laws.</p>
+
+<h2 id="cools">Dark Tints Can Impede Your Vision</h2>
+
+<p>You should be aware <a href="https://www.rvinyl.com/pros-and-cons-of-dark-tint">excessively dark tints</a> can impair your vision, especially when you drive at night or in an area that doesn&#8217;t get a lot of sun during the day. When choosing how dark to make your windows, consider when and where you typically drive. If you often drive at night or the weather in your area is often overcast, you may want to avoid tints or choose a lighter shade.</p>
+
+<h2 id="cooly">Window Films Have Pros and Cons During Emergency Situations</h2>
+
+<figure class="wp-block-image"><img src="https://i2.wp.com/www.bimmerforums.com/wp-content/uploads/2018/09/BMW-730Li-crash-750x500.jpg?resize=474%2C316" alt="" class="wp-image-2584" srcset="https://i2.wp.com/www.bimmerforums.com/wp-content/uploads/2018/09/BMW-730Li-crash-750x500.jpg?resize=750%2C500 750w, https://i2.wp.com/www.bimmerforums.com/wp-content/uploads/2018/09/BMW-730Li-crash-750x500.jpg?resize=300%2C200 300w" sizes="(max-width: 474px) 100vw, 474px" data-recalc-dims="1" /></figure>
+
+<p>In car crashes and other emergencies, tinted windows differ from regular windows in several ways. If a tinted window breaks, it won&#8217;t shatter like a regular window would. Instead, the adhesive properties of the tint hold the window together in one piece, which can prevent you from being cut by glass shards.</p>
+
+<p>Tinted windows, however, can also be a hindrance to emergency personnel. Rescue workers at a crash scene will look into the windows of the cars involved to assess the situation and determine how best to proceed. If they can&#8217;t see inside your vehicle because of a window film, they have less information to work with.</p>
+
+<p>Tinting your windows has both pros and cons. Depending on your goals, it may or may not be the right choice for you. Consider the conditions you normally drive in, the laws in your state and these other factors when deciding whether — and to what degree — to mod your windows.</p>
+
+<article id="post-2734" class="post-2734 post type-post status-publish format-standard has-post-thumbnail hentry category-car-care tag-car-care tag-maintenance tag-winter-car-tips tag-winter-driving-tips">
+
+	<a class="posty-thumbnail" href="http://www.bimmerforums.com/2018/11/four-things-that-are-damaging-your-cars-engine/" aria-hidden="true">
+	<img width="1038" height="576" src="https://i1.wp.com/www.bimmerforums.com/wp-content/uploads/2018/06/maxresdefault-14.jpg?resize=1038%2C576" class="attachment-twentyfourteen-full-width size-twentyfourteen-full-width wp-post-image" alt="" srcset="https://i1.wp.com/www.bimmerforums.com/wp-content/uploads/2018/06/maxresdefault-14.jpg?resize=672%2C372 672w, https://i1.wp.com/www.bimmerforums.com/wp-content/uploads/2018/06/maxresdefault-14.jpg?resize=1038%2C576 1038w" sizes="(max-width: 1038px) 100vw, 1038px" /></a>
+
+	<header class="entry-headers">
+				<div class="entry-meta">
+			<span class="cat-links"><a href="http://www.carcare.org/" rel="category tag">Car Care</a></span>
+		</div>
+        <h1 class="entry-tit" id="dog"><u>Four Things That Are Damaging Your Car&#8217;s Engine</u></h1>
+		<div class="entry-meta">
+			<span class="entry-date"><time id="rtis" class="entry-date" datetime="2018-11-28T12:39:54+00:00">November 28, 2018</time></span> <span class="byline"><span id="rti" class="author vcard">Shawn Spencer</span></span></div>
+	</header>
+
+		<div class="entry-content"></div>
+</article>
+
+<p>Nobody wants to damage their car&#8217;s engine, but many of us unknowingly do so. Even those who know what to do to keep an engine in good shape sometimes forget to take care of their vehicles when life gets hectic.</p>
+
+<p>Understanding some of the things that most frequently cause engine damage can help you keepyours in top condition. Here are five major problems to avoid.</p>
+
+<h2 id="family">1. Cold Starts</h2>
+<p>When you&#8217;re in a hurry, it&#8217;s tempting to start your car and immediately speed off to wherever you&#8217;re heading. These cold starts, however, can cause damage to your starter, battery, alternator, pistons, cylinder rods and more. </p>
+<p>The oil in your engine needs time to warm up, thin out and form a protective coat over the engine&#8217;s moving parts. This is especially true when your car&#8217;s been sitting for a while, or when it&#8217;s especially cold out.</p>
+<p>Instead of starting your engine and driving right away, let your car run for a minute or two. This gives the oil time to warm up and provide sufficient lubrication.</p>
+<p>If you live somewhere where temperatures regularly dip <a href="https://www.cars.com/articles/2014/01/tips-to-start-your-car-in-the-cold/">below 0 degrees Fahrenheit</a>, you may also want to invest in an engine heater that connects to your radiators.</p>
+
+<figure class="wp-block-image"><img src="https://i2.wp.com/www.bimmerforums.com/wp-content/uploads/2018/10/P90327697_highRes_the-new-bmw-x5-with-.jpg?resize=474%2C335" alt="" class="wp-image-2680" srcset="https://i2.wp.com/www.bimmerforums.com/wp-content/uploads/2018/10/P90327697_highRes_the-new-bmw-x5-with-.jpg?resize=1024%2C723 1024w, https://i2.wp.com/www.bimmerforums.com/wp-content/uploads/2018/10/P90327697_highRes_the-new-bmw-x5-with-.jpg?resize=300%2C212 300w, https://i2.wp.com/www.bimmerforums.com/wp-content/uploads/2018/10/P90327697_highRes_the-new-bmw-x5-with-.jpg?resize=768%2C542 768w, https://i2.wp.com/www.bimmerforums.com/wp-content/uploads/2018/10/P90327697_highRes_the-new-bmw-x5-with-.jpg?w=948 948w, https://i2.wp.com/www.bimmerforums.com/wp-content/uploads/2018/10/P90327697_highRes_the-new-bmw-x5-with-.jpg?w=1422 1422w" sizes="(max-width: 474px) 100vw, 474px" data-recalc-dims="1" /></figure>
+
+<h2 id="guy">2. Not Changing Fluids</h2>
+<p>You need to change the fluids in your car on the recommended schedule to keep your engine running correctly. These fluids include your oil, coolant, transmission fluid, clutch fluid, steering fluid, brake fluid and windshield wiper fluid.</p>
+<p>Letting the oil sit for too long can result in the formation of oil sludge, which blocks oil from accessing the parts it needs and causes engine parts to retain excess heat. Running out of other fluids can also cause severe damage.</p>
+<p>To avoid these problems, change your fluids at the recommended intervals. You can find the specific manufacturer&#8217;s recommendations in your owner&#8217;s manual.</p>
+<p>In the past, the standard recommendation was to change your oil every 3000 miles, but today, most auto manufacturers say you can <a href="https://www.cars.com/articles/2013/04/do-you-really-need-to-change-your-oil-every-3000-miles/">go at least 7500 miles</a>. For automatic transmissions, you should change your transmission fluid <a href="https://barsleaks.com/engine/when-should-i-replace-my-transmission-fluid/">about every 30,000 miles</a>. For manual transmissions, you can go between 30,000 and 50,000 miles.</p>
+
+<figure class="wp-block-image"><img src="https://i0.wp.com/www.bimmerforums.com/wp-content/uploads/2017/10/1470693124-services-oil.jpg?resize=474%2C238" alt="" class="wp-image-2268" srcset="https://i0.wp.com/www.bimmerforums.com/wp-content/uploads/2017/10/1470693124-services-oil.jpg?w=1024 1024w, https://i0.wp.com/www.bimmerforums.com/wp-content/uploads/2017/10/1470693124-services-oil.jpg?resize=300%2C151 300w, https://i0.wp.com/www.bimmerforums.com/wp-content/uploads/2017/10/1470693124-services-oil.jpg?resize=768%2C386 768w, https://i0.wp.com/www.bimmerforums.com/wp-content/uploads/2017/10/1470693124-services-oil.jpg?w=948 948w" sizes="(max-width: 474px) 100vw, 474px" data-recalc-dims="1" /></figure>
+
+<h2 id="day">3. Frequent Redlining</h2>
+<p>On vehicles with a tachometer, the gauge that displays the engine&#8217;s revolutions per minute (rpm), there is typically a red line near the higher numbers on the gauge. This line serves to warn you that your engine cannot sustain going above that rpm.</p>
+<p>Frequent high revving keeps your engine at a higher temperature than what is ideal for it, which can damage the engine, as well as components such as the transmission and valve train.</p>
+<p>To avoid this problem, don&#8217;t rev your engine to the point of going above the red line unless necessary. Instead, try to build speed gradually.</p>
+
+<figure class="wp-block-image"><img src="https://i1.wp.com/www.bimmerforums.com/wp-content/uploads/2016/03/m2-1.jpg?resize=474%2C316" alt="" class="wp-image-1358" srcset="https://i1.wp.com/www.bimmerforums.com/wp-content/uploads/2016/03/m2-1.jpg?resize=1024%2C682 1024w, https://i1.wp.com/www.bimmerforums.com/wp-content/uploads/2016/03/m2-1.jpg?resize=300%2C200 300w, https://i1.wp.com/www.bimmerforums.com/wp-content/uploads/2016/03/m2-1.jpg?resize=768%2C511 768w, https://i1.wp.com/www.bimmerforums.com/wp-content/uploads/2016/03/m2-1.jpg?w=1600 1600w, https://i1.wp.com/www.bimmerforums.com/wp-content/uploads/2016/03/m2-1.jpg?w=948 948w, https://i1.wp.com/www.bimmerforums.com/wp-content/uploads/2016/03/m2-1.jpg?w=1422 1422w" sizes="(max-width: 474px) 100vw, 474px" data-recalc-dims="1" /></figure>
+
+<h2 id="blast">4. Neglecting Maintenance</h2>
+<p>Ignoring regular and one-off maintenance is another common cause of engine damage. You should take your vehicle in for maintenance at regular intervals — your manual will include a maintenance schedule to help you keep your car in tip-top shape.</p>
+<p><a href="https://lifehacker.com/the-preventative-maintenance-you-need-to-do-on-your-car-1394196018">Routine maintenance schedule</a> should include things like checking the tire pressure, replacing worn belts, cleaning your battery contacts, rotating your tires and changing your spark plugs.</p>
+<p>You should also heed the warnings of your check engine light. While it can go off for small things, it can also indicate a serious problem. Always get your car checked as soon as you can when it goes off. Even if it does go off because of a minor issue, a small problem left unresolved can eventually snowball into a much bigger and more expensive issue.</p>
+<p>Are any of these four common problems causing damage to your engine? While plenty of things can cause engine problems, paying attention to these four common issues can make a substantial difference in helping you keep your car healthy.</p>
+
+</div>
+<div id="dangs" class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-2737" class="share-facebook sd-button share-icon" href="http://www.bimmerforums.com/2018/12/what-you-should-know-about-window-mods-and-tinting/?share=facebook" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-2737" class="share-linkedin sd-button share-icon" href="http://www.bimmerforums.com/2018/12/what-you-should-know-about-window-mods-and-tinting/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-2737" class="share-twitter sd-button share-icon" href="http://www.bimmerforums.com/2018/12/what-you-should-know-about-window-mods-and-tinting/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-google-plus-1"><a rel="nofollow noopener noreferrer" data-shared="sharing-google-2737" class="share-google-plus-1 sd-button share-icon" href="http://www.bimmerforums.com/2018/12/what-you-should-know-about-window-mods-and-tinting/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-end"></li></ul></div></div></div></div><
+
+<!-- confirmation pop up for logout -->
+<script type='text/javascript'>
+
+    function confirmLogout(){
+        var agree = confirm("Are you sure you want to logout?");
+
+        if(agree){
+            return true;
+
+            }else{
+
+            return false;
+        }
+    }
+</script>
+
+  {% endblock content %}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+</html>

@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1 id="cus">Contact Us</h1>
+
+<article id="tings">
+<div>
+<p id="cuss">Wolverine – Alexis Hennings – Owner & Administrator
+    Spiderman – Peter Parker –  Administrator</p>
+
+<p> For more information about advertising, please contact us at db7vantage007@gmail.com or visit our Advertising Page
+    Swapportunities.com is an enthusiast website with message board that was started in late 2000. Members get to know
+    each other online, but many also meet in person at different times during the year at special events. We are not
+    associated with, or financially supported by, BMW. The site is free to all non-commercial members.
+    Swapportunities.com is a website dedicated to owners and enthusiasts of BMW automobiles. We invite you to browse
+    around and see the vast amount of information that is available to you here.
+    Be sure to take a look at our forum-style message board where thousands of members discuss BMW related topics
+    around the clock! Our message board is the heart of Swapportunities.com with a huge following of members that grows
+    daily. If you like to share and exchange information and ideas about BMW related topics, this is the place for you!
+    If you prefer to just lurk and learn we love to have visitors too! If you like what you see (and we know you will)
+    register as a member and say hello to our large and friendly BMW community. It’s free, it’s enlightening, it’s
+    informative and it’s fun! We want you to experience what thousands of members “already” enjoy on Swapportunities.com.
+    Come join us! </p>
+</div>
+</article>
+<!-- stripe credit card payment -->
+  <div class="pay">
+    <form action="your-server-side-code" method="POST">
+      <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+        data-amount="999"
+        data-name="Stripe.com"
+        data-description="Example charge"
+        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+        data-locale="auto"
+        data-zip-code="true">
+      </script>
+    </form>
+  </div>
+
+{% endblock content %}

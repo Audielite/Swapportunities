@@ -1,0 +1,315 @@
+
+/*ABOUT*/
+#words{
+    color: black;
+}
+
+#about{
+    padding-top: 40px;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    padding: 17px;
+}
+
+#about_us{
+    color: white;
+    text-align: center;
+}
+
+#building{
+    padding-left: 815px;
+    height: 500px;
+    width: 600px;
+}
+
+.white_bg{
+    background-color: white;
+    padding: 3px;
+    color: black;
+    font-size: x-large;
+}
+
+#ecs{
+    padding-left: 250px;
+    height: 400px;
+    width: 500px;
+    padding-bottom: 10px;
+}
+
+/*REGISTER*/
+
+.content-section{
+    width: 500px;
+    text-align: center;
+}
+
+#sign{
+    width: 100%;
+    margin-right: 43%;
+    margin-left: 43%;
+}
+
+#butt{
+    color: black;
+}
+
+#join{
+    font-size: x-large;
+}
+
+#signs{
+    color: white;
+    font-size: medium;
+}
+
+.media-body{
+    padding-top: 1px;
+    border: solid 1px #5c8593;
+    font-size: 10pt;
+    color:#42484d;
+    background-color:#ffffff;
+}
+
+.rounded-circle{
+    padding-right: 10px;
+}
+
+.entry-title{
+    padding-top: 300px;
+    padding-left: 20px;
+    color: white;
+}
+
+#dang, .posty-thumbnail, .entry-headers, #dangs, .entry-content{
+    padding-left: 20px;
+}
+
+#dang, #psych, #rti, #rtis{
+    color: blue;
+}
+
+#juliet{
+    color: black;
+}
+
+#cool, #cools, #cooly, #coolys, #fired, #family, #guy, #day, #blast, #dog, .sd-title, #forgot, #dogs{
+    color: white;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+#party, #lois, #meg, #megs, #louis{
+    color: white;
+}
+
+#laugh, #cry{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+#cry{
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+#site-header{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    z-index: 15;
+    top: 29%;
+    left: 16%;
+    margin: -100px 0 0 -150px;
+}
+
+.maps{
+    position: sticky;
+    width: 300px;
+    height: 200px;
+    z-index: 15;
+    top: 9%;
+    left: 69%;
+    margin: -100px 0 0 -150px;
+}
+
+.media{
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+#cus{
+    width: 30%;
+    margin-left: 35%;
+    padding-top: 65px;
+    color: white;
+}
+
+#cake{
+
+}
+
+#cuss{
+    width: 95%;
+    margin-right: 5%;
+    padding-top: 5px;
+}
+
+#ting{
+    width: 90%;
+}
+
+#tings{
+    width: 30%;
+    margin-left: 35%;
+    padding-top: 35px;
+}
+
+#forgot{
+    line-height: 2em;
+}
+
+.pay{
+    margin-right: 35%;
+    margin-left: 35%;
+    padding-top: 65px
+}
+
+form {
+    width: 100%;
+    margin-right: 100%;
+    margin-left: 100%;
+    padding: 35px;
+    color: white;
+}
+
+div.reg {
+    width:100%;
+    border:1px solid #000
+}
+
+#fire{
+    font-size: xx-large;
+}
+
+#fires{
+    font-size: x-large;
+}
+
+nav{
+    text-align: center;
+}
+
+#homeTitle{
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-repeat: inherit;
+    font-size: 24px;
+}
+
+p{
+    font-family: "Comic Sans MS";
+    font-size: medium;
+    color: white;
+}
+
+.container {
+  max-width: 960px;
+}
+
+#header{
+    position: center;
+}
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+    color: yellow;
+    transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+#m3kit, #m3kits{
+  height: 200px;
+  width: 200px;
+}
+
+#map {
+    height: 40%;
+    width: 30%;
+    margin: 0;
+    padding-top: 255px;
+    padding-left: 17px;
+}
+
+#meet, #meets{
+    padding-left: 1045px;
+}
+
+.account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+}

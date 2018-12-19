@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% for post in posts.items %}
+    <article id="ting" class="media content-section">
+        <img class="rounded-circle article-img" src="{{ url_for('static', filename='images/' + post.author.image_file) }}">
+        <div class="media-body">
+            <div class="article-metadata">
+                <a class="mr-2" href="{{ url_for('users.users_stuff', username=post.author.username) }}">
+                    {{ post.author.username }}
+                </a>
+                <small class="text-muted">
+                    {{ post.date_posted.strftime('%Y-%m-%d') }}
+                </small>
+            </div>
+            <h2><a class="article-title" href="{{ url_for('posts.posty', post_id=post.id) }}">
+                {{ post.title }}
+            </a></h2>
+            <p id="juliet" class="article-content">
+                {{ post.content }}
+            </p>
+        </div>
+    </article>
+{% endfor %}
+
+<p id="meets">Monthly car meet will be held at:</p>
+<p id="meet">1100 Canterbury Rd S, Shakopee, MN 55379</p>
+<div class="maps" id="map">
+    <!-- Google map location for car show -->
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 44.786, lng: -93.480},
+          zoom: 15
+        });
+      }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClny7Vks-NEUXEMvhqhqPUjOYySMzW16k&callback=initMap"
+    async defer>
+    </script>
+</div>
+
+{% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+    {% if page_num %}
+       {% if posts.page == page_num %}
+        <a class="btn btn-info mb-4" href="{{ url_for('main.home', page=page_num) }}">{{ page_num }}</a>
+     {% else %}
+        <a class="btn btn-outline-info mb-4" href="{{ url_for('main.home', page=page_num) }}">{{ page_num }}</a>
+     {% endif %}
+    {% else %}
+        ...
+    {% endif %}
+{% endfor %}
+{% endblock content %}
