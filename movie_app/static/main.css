@@ -50,7 +50,7 @@
     margin-left: 43%;
 }
 
-#butt, #juliet, #lassie{
+#butt, #juliet, #lassie, #cop, #cops{
     color: black;
 }
 
@@ -61,6 +61,11 @@
 #signs{
     color: white;
     font-size: medium;
+}
+
+.modal-footer{
+    margin-right: 45%;
+    margin-left: 55%;
 }
 
 .media-body{
