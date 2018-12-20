@@ -50,7 +50,7 @@
     margin-left: 43%;
 }
 
-#butt{
+#butt, #juliet, #lassie{
     color: black;
 }
 
@@ -89,10 +89,6 @@
     color: blue;
 }
 
-#juliet{
-    color: black;
-}
-
 #cool, #cools, #cooly, #coolys, #fired, #family, #guy, #day, #blast, #dog, .sd-title, #forgot, #dogs{
     color: white;
     font-family: 'Tangerine', serif;
@@ -100,7 +96,7 @@
     text-shadow: 4px 4px 4px #aaa;
 }
 
-#party, #lois, #meg, #megs, #louis{
+#party, #lois, #meg, #megs, #louis, .mb-3{
     color: white;
 }
 
@@ -140,15 +136,11 @@
     padding-bottom: 10px;
 }
 
-#cus{
+#cus, .mb-3{
     width: 30%;
-    margin-left: 35%;
+    margin-left: 42%;
     padding-top: 65px;
     color: white;
-}
-
-#cake{
-
 }
 
 #cuss{
@@ -157,7 +149,7 @@
     padding-top: 5px;
 }
 
-#ting{
+#ting, #yeti{
     width: 90%;
 }
 

@@ -27,8 +27,9 @@
 <p id="meets">Monthly car meet will be held at:</p>
 <p id="meet">1100 Canterbury Rd S, Shakopee, MN 55379</p>
 <div class="maps" id="map">
+
     <!-- Google map location for car show -->
-    <script>
+    <script type='text/javascript'>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -39,8 +40,24 @@
     </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClny7Vks-NEUXEMvhqhqPUjOYySMzW16k&callback=initMap"
-    async defer>
+    async defer></script>
+
+    <!-- confirmation pop up for logout -->
+    <script type='text/javascript'>
+
+        function confirmLogout(){
+            var agree = confirm("Are you sure you want to logout?");
+
+            if(agree){
+                return true;
+
+                }else{
+
+                return false;
+            }
+        }
     </script>
+
 </div>
 
 {% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}

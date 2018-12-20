@@ -72,4 +72,21 @@
         Already have an account? <a class="ml-2" href="{{ url_for('users.login') }}">Sign in</a>
     </small>
 </div>
+
+<!-- confirmation pop up for logout -->
+<script type='text/javascript'>
+
+    function confirmLogout(){
+        var agree = confirm("Are you sure you want to logout?");
+
+        if(agree){
+            return true;
+
+            }else{
+
+            return false;
+        }
+    }
+</script>
+
 {% endblock content %}
