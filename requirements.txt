@@ -21,7 +21,7 @@ idna==2.6
 itsdangerous==0.24
 Jinja2==2.10
 MarkupSafe==1.0
-Pillow==5.1.0
+Pillow==6.2.0
 post==1.0.2
 psycopg2==2.7.4
 public==1.0.3
